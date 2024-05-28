@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'DejaVuSansMono';
+    src: url('fonts/DejaVuSansMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVuSansMono';
+    src: url('fonts/DejaVuSansMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVuSansMono';
+    src: url('fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'DejaVuSansMono';
+    src: url('fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+body {
+    background-color: black;
+    font-family: 'DejaVuSansMono', monospace;
+    color: lightgray;
+}
+
+#content-box {
+    background-color: red;
+}
