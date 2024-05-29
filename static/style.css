@@ -146,6 +146,29 @@ a {
     color: whitesmoke;
 }
 
+#blogs-list {
+    font-family: 'DejaVuSansMono', monospace;
+}
+
+.blog-entry:hover {
+    background-color: lightgray;
+    color:black;
+}
+
+.blink {
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    background-color: lightgray;
+    animation: blink 1.3s step-start infinite;
+    vertical-align: middle;
+}
+@keyframes blink {
+    50% {
+        background-color: black;
+    }
+}
+
 /* Tablet and larger */
 @media (min-width: 600px) {
 
