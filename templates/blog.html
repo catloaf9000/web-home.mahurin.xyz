@@ -1,24 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}Blog{% endblock %}
+{% block title %}{{ title }} - Oleksii Mahurin{% endblock %}
 
 {% block content %}
-<div># ls -l ./blogs | awk '{print $6, $7, $8, $9}'</div>
-<div id="blogs-list">
-    <br>
-    <div class="blog-entry">
-        <span class="blog-entry__date">Jan 01 2024</span>
-        <span class="blog-entry__title">Blog Post Title 1</span>
-    </div>
-    <div class="blog-entry">
-        <span class="blog-entry__date">Feb 14 2024</span>
-        <span class="blog-entry__title">Blog Post Title 2</span>
-    </div>
-    <div class="blog-entry">
-        <span class="blog-entry__date">Mar 03 2024</span>
-        <span class="blog-entry__title">Blog Post Title 3</span>
-    </div>
-    <!-- Add more blog entries as needed -->
+<h1>{{ title }}</h1>
+<div class="blog-content">
+    {{ content|safe }}
 </div>
-<div># <span class="blink"></span></div>
+<a href="{{ url_for('blogs') }}">Back to Blog</a>
 {% endblock %}

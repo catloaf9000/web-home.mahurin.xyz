@@ -35,6 +35,10 @@ body {
     flex-direction: column;
 }
 
+a {
+    color: whitesmoke;
+}
+
 .page {
     background-color: black;
     border: 3px solid lightgray;
@@ -79,7 +83,9 @@ img {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    text-align: center;
     padding: 5px;
+    width: 100%;
 }
 
 .menu__link:hover {
@@ -138,22 +144,47 @@ img {
     text-align: right;
 }
 
-.man-page_bold {
+._bold-font {
     font-weight: bold;
-}
-
-a {
-    color: whitesmoke;
 }
 
 #blogs-list {
     font-family: 'DejaVuSansMono', monospace;
 }
 
-.blog-entry:hover {
-    background-color: lightgray;
-    color:black;
+#blogs-list ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;             /* Removes default margin */
+    padding: 0;            /* Removes default padding */
 }
+
+.blogs-entry {
+    margin: 10px 0 5px 0;
+}
+
+.blogs-entry__header {
+    all: unset;
+    margin: 0;
+    padding: 0;
+    color:lightgray
+}
+
+.blogs-entry__description {
+    color:slategray
+}
+
+.blogs-entry:hover {
+    background-color: lightgray;
+}
+
+.blogs-entry:hover .blogs-entry__header {
+    color: black;
+}
+
+.blogs-entry:hover .blogs-entry__description {
+    color: #333;
+}
+
 
 .blink {
     display: inline-block;
