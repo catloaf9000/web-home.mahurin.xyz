@@ -1,0 +1,27 @@
+# Ignore the local virtual environment
+venv/
+
+# Ignore all bytecode
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore git repository directory and files
+.git
+.gitignore
+
+# Ignore other unnecessary files
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+# Ignore configuration files that may contain sensitive information
+config.py
+secrets.yml
