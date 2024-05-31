@@ -3,83 +3,118 @@
 {% block title %}Oleksii Mahurin{% endblock %}
 
 {% block content %}
-<div class="man-page">
-    <div class="man-page__title">
-        <span class="man-page__title-left">OLEKSII MAHURIN(1)</span>
-        <span class="man-page__title-center">Personal Page</span>
-        <span class="man-page__title-right">OLEKSII MAHURIN(1)</span>
-    </div>
-    <div class="man-page__section">
-        <span class="man-page__heading">NAME</span>
-        <p class="man-page__text">Oleksii Mahurin - Computer Engineer, System Administrator</p>
-    </div>
-    <img src="/static/dedlyshed.png" alt="deldyshed picture">
-    <div class="man-page__section">
-        <span class="man-page__heading">SYNOPSIS</span>
-        <p class="man-page__text">Oleksii Mahurin [OPTIONS]... [PROJECTS]...</p>
-    </div>
-    <div class="man-page__section">
-        <span class="man-page__heading">DESCRIPTION</span>
-        <p class="man-page__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed in tellus vel nulla pellentesque lobortis et vitae ligula. Cras augue odio, 
-            sodales a vehicula molestie, bibendum sit amet nisl. Nulla dignissim maximus dui 
-            a volutpat. Maecenas maximus, nisi ac malesuada egestas, odio felis pharetra sem, 
-            eget mollis tortor enim at mauris.
-        </p>
-    </div>
-    <div class="man-page__section">
-        <span class="man-page__heading">OPTIONS</span>
-        <span class="man-page__text _bold-font">-s, --sysadmin</span>
-        <p class="man-page__text man-page__text_indent">Cras vel mauris libero. Duis maximus 
-            risus nec lobortis maximus. Pellentesque consequat  velit sit amet nisi efficitur, 
-            at bibendum turpis porttitor.
-        </p>
-        <span class="man-page__text _bold-font">-h, --homelab</span>
-        <p class="man-page__text man-page__text_indent">
-            Cras vel mauris libero. Duis maximus risus nec lobortis maximus. Pellentesque 
-            consequat  velit sit amet nisi efficitur, at bibendum turpis porttitor.
-        </p>
-        <span class="man-page__text _bold-font">-o, --other</span>
-        <p class="man-page__text man-page__text_indent">
-            Quisque a libero consectetur, mollis lectus sed, efficitur tellus. Nam feugiat, enim et 
-            porttitor feugiat, purus tortor tempor arcu, et convallis purus leo in sapien. 
-            Suspendisse at luctus augue.
-        </p>
+<div class="terminal">
+    <div class="terminal__typing-text terminal_hide" id="typing-text" data-speed="1.5" data-delay="800"># man 'Oleksii Mahurin'</div>
+    <div class="man-page terminal__result">
+        <div class="man-page__title">
+            <span class="man-page__title-left">OLEKSII MAHURIN(1)</span>
+            <span class="man-page__title-center">Personal Page</span>
+            <span class="man-page__title-right">OLEKSII MAHURIN(1)</span>
+        </div>
         <div class="man-page__section">
-            <span class="man-page__heading">PROJECTS</span>
-            <span class="man-page__text _bold-font">Homelab</span>
-            <p class="man-page__text man-page__text_indent">Cras vel mauris libero. Duis maximus 
+            <span class="man-page__heading">NAME</span>
+            <p class="man-page__text">Oleksii Mahurin - Computer Engineer, System Administrator</p>
+        </div>
+        <img src="/static/dedlyshed.png" alt="deldyshed picture">
+        <div class="man-page__section">
+            <span class="man-page__heading">SYNOPSIS</span>
+            <p class="man-page__text">Oleksii Mahurin [<a href="#skills">SKILLS</a>]... [<a href="#projects">PROJECTS</a>]...</p>
+        </div>
+        <div class="man-page__section">
+            <span class="man-page__heading">DESCRIPTION</span>
+            <p class="man-page__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed in tellus vel nulla pellentesque lobortis et vitae ligula. Cras augue odio, 
+                sodales a vehicula molestie, bibendum sit amet nisl. Nulla dignissim maximus dui 
+                a volutpat. Maecenas maximus, nisi ac malesuada egestas, odio felis pharetra sem, 
+                eget mollis tortor enim at mauris.
+            </p>
+        </div>
+        <div class="man-page__section">
+            <span class="man-page__heading" id="skills">SKILLS</span>
+            <span class="man-page__text _bold-font">-o, --operational-systems</span>
+            <p class="man-page__text man-page__text_indent">
+                Cras vel mauris libero. Duis maximus 
                 risus nec lobortis maximus. Pellentesque consequat  velit sit amet nisi efficitur, 
                 at bibendum turpis porttitor.
             </p>
-            <span class="man-page__text _bold-font">GregTech:NH calculator</span>
+            <span class="man-page__text _bold-font">-n, --network-engineering</span>
             <p class="man-page__text man-page__text_indent">
                 Cras vel mauris libero. Duis maximus risus nec lobortis maximus. Pellentesque 
                 consequat  velit sit amet nisi efficitur, at bibendum turpis porttitor.
             </p>
-            <span class="man-page__text _bold-font">Something else</span>
+    
+            <span class="man-page__text _bold-font">-v, --virtualization</span>
             <p class="man-page__text man-page__text_indent">
                 Quisque a libero consectetur, mollis lectus sed, efficitur tellus. Nam feugiat, enim et 
                 porttitor feugiat, purus tortor tempor arcu, et convallis purus leo in sapien. 
                 Suspendisse at luctus augue.
             </p>
-        </div>
-        <div class="man-page__section">
-            <span class="man-page__heading" id="contact">CONTACTS</span>
-            <span class="man-page__text _bold-font">Email:</span>
+    
+            <span class="man-page__text _bold-font">-p, --programming</span>
             <p class="man-page__text man-page__text_indent">
-                <a href="mailto:catloaf9000@gmail.com">catloaf9000@gmail.com</a>
+                Quisque a libero consectetur, mollis lectus sed, efficitur tellus. Nam feugiat, enim et 
+                porttitor feugiat, purus tortor tempor arcu, et convallis purus leo in sapien. 
+                Suspendisse at luctus augue.
             </p>
-            <span class="man-page__text _bold-font">LinkedIn:</span>
+    
+            <span class="man-page__text _bold-font">-d, --databases</span>
             <p class="man-page__text man-page__text_indent">
-                <a href="https://www.linkedin.com/in/oleksii-mahurin/">linkedin.com/in/oleksii-mahurin</a>
+                Quisque a libero consectetur, mollis lectus sed, efficitur tellus. Nam feugiat, enim et 
+                porttitor feugiat, purus tortor tempor arcu, et convallis purus leo in sapien. 
+                Suspendisse at luctus augue.
             </p>
-            <span class="man-page__text _bold-font">Telegram:</span>
+    
+            <span class="man-page__text _bold-font">-c, --cloud</span>
             <p class="man-page__text man-page__text_indent">
-                <a href="https://t.me/catloaf9000">@catloaf9000</a>
+                Quisque a libero consectetur, mollis lectus sed, efficitur tellus. Nam feugiat, enim et 
+                porttitor feugiat, purus tortor tempor arcu, et convallis purus leo in sapien. 
+                Suspendisse at luctus augue.
             </p>
+    
+            <span class="man-page__text _bold-font">-l, --languages</span>
+            <p class="man-page__text man-page__text_indent">
+                Ukrainian fluent, Russian fluent, English B2
+            </p>
+    
+            <div class="man-page__section">
+                <span class="man-page__heading" id="projects">PROJECTS</span>
+                <span class="man-page__text _bold-font">Homelab</span>
+                <p class="man-page__text man-page__text_indent">Cras vel mauris libero. Duis maximus 
+                    risus nec lobortis maximus. Pellentesque consequat  velit sit amet nisi efficitur, 
+                    at bibendum turpis porttitor.
+                </p>
+                <span class="man-page__text _bold-font">GregTech:NH calculator</span>
+                <p class="man-page__text man-page__text_indent">
+                    Cras vel mauris libero. Duis maximus risus nec lobortis maximus. Pellentesque 
+                    consequat  velit sit amet nisi efficitur, at bibendum turpis porttitor.
+                </p>
+                <span class="man-page__text _bold-font">Something else</span>
+                <p class="man-page__text man-page__text_indent">
+                    Quisque a libero consectetur, mollis lectus sed, efficitur tellus. Nam feugiat, enim et 
+                    porttitor feugiat, purus tortor tempor arcu, et convallis purus leo in sapien. 
+                    Suspendisse at luctus augue.
+                </p>
+                <span class="man-page__text _bold-font"><a href="{{ url_for('projects') }}">See more at projects page</a></span>
+                
+            </div>
+            <div class="man-page__section">
+                <span class="man-page__heading" id="contact">CONTACTS</span>
+                <span class="man-page__text _bold-font">Email:</span>
+                <p class="man-page__text man-page__text_indent">
+                    <a href="mailto:catloaf9000@gmail.com">catloaf9000@gmail.com</a>
+                </p>
+                <span class="man-page__text _bold-font">LinkedIn:</span>
+                <p class="man-page__text man-page__text_indent">
+                    <a href="https://www.linkedin.com/in/oleksii-mahurin/">linkedin.com/in/oleksii-mahurin</a>
+                </p>
+                <span class="man-page__text _bold-font">Telegram:</span>
+                <p class="man-page__text man-page__text_indent">
+                    <a href="https://t.me/catloaf9000">@catloaf9000</a>
+                </p>
+            </div>
         </div>
     </div>
 </div>
+
 {% endblock %}

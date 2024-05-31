@@ -3,5 +3,10 @@
 {% block title %}Projects{% endblock %}
 
 {% block content %}
-In development
+<div class="terminal">
+    <div class="terminal__typing-text" id="typing-text" data-speed="2.5" data-delay="1000"># find ./projects</div>
+    <p class="terminal__result">find: '/projects': No such file or directory</p>
+    <p class="terminal__result">Currently in development :3</p>
+    <p class="terminal__result"># <span class="terminal_blink"></span></p>
+</div>
 {% endblock %}

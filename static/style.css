@@ -186,7 +186,7 @@ img {
 }
 
 
-.blink {
+.terminal_blink {
     display: inline-block;
     width: 7px;
     height: 14px;
@@ -199,6 +199,26 @@ img {
         background-color: black;
     }
 }
+
+.terminal__result {
+    display: none;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px; /* Adjust the width as needed */
+    height: 1em; /* Height matches the font size */
+    background-color: white;
+    animation: blink 1s step-end infinite; /* Blinking effect */
+    vertical-align: bottom; /* Align with text */
+}
+@keyframes blink {
+    50% { background-color: transparent; }
+}
+
+
+
+
 
 /* Tablet and larger */
 @media (min-width: 600px) {

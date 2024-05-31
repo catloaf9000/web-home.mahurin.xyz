@@ -3,20 +3,24 @@
 {% block title %}Blogs{% endblock %}
 
 {% block content %}
-<div># ls -l --time-style=+%F ./blogs | \ <br>awk '{print $6, $7}'
+<div class="terminal">
+    <div class="terminal__typing-text" id="typing-text">
+        # ls -l --time-style=+%F ./blogs | awk '{print $6, $7}'
     </div>
-<div id="blogs-list">
-    <ul>
-        {% for blog in blogs %}
-        <li class="blogs-entry">
-            <a class="blogs-entry__header" href="{{ url_for('blog', slug=blog.Title|replace(' ', '-'))|lower }}">
-                <span class="_bold-font">{{ blog.Date }}</span> {{ blog.Title }}
-                <div class="blogs-entry__description">{{ blog.Description }}</div>
-            </a>
-            
-        </li>
-        {% endfor %}
-    </ul>
+    <div id="blogs-list">
+        <ul>
+            {% for blog in blogs %}
+            <li class="blogs-entry terminal__result">
+                <a class="blogs-entry__header" href="{{ url_for('blog', slug=blog.Title|replace(' ', '-'))|lower }}">
+                    <span class="_bold-font">{{ blog.Date }}</span> {{ blog.Title }}
+                    <div class="blogs-entry__description">{{ blog.Description }}</div>
+                </a>
+                
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="terminal__result"># <span class="terminal_blink"></span></div>
 </div>
-<div># <span class="blink"></span></div>
+
 {% endblock %}

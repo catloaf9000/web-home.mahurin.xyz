@@ -3,9 +3,15 @@
 {% block title %}{{ title }} - Oleksii Mahurin{% endblock %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-<div class="blog-content">
-    {{ content|safe }}
+<div class="terminal">
+    <div class="terminal__typing-text" id="typing-text" data-speed="3" data-delay="500"># cat ./blogs/{{ path }}.md</div>
+    <div class="terminal__result">
+        <h1>{{ title }}</h1>
+        <div class="blog-content">
+            {{ content|safe }}
+        </div>
+        <a href="{{ url_for('blogs') }}">Back to Blog</a>
+    </div>
+    <p class="terminal__result"># <span class="terminal_blink"></span></p>
 </div>
-<a href="{{ url_for('blogs') }}">Back to Blog</a>
 {% endblock %}

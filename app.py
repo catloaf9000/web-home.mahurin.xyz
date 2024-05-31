@@ -58,7 +58,7 @@ def blog(slug):
             blog_slug = re.sub(r'\s+', '-', metadata['Title']).lower()
             if blog_slug == slug:
                 html_content = markdown.markdown(content)
-                return render_template('blog.html', title=metadata['Title'], content=html_content)
+                return render_template('blog.html', title=metadata['Title'], content=html_content, path=slug)
     abort(404)
 
 @app.route("/projects")
