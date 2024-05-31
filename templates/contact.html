@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div class="terminal">
+    <div class="terminal__typing-text" id="typing-text" data-speed="2.5" data-delay="150"># cat /etc/contact_info.txt</div>
+    <p class="terminal__result"></p>
+    <div class="terminal__result">Name: {{ contact_info.name }}</div>
+    <div class="terminal__result">Email: <a href="mailto:{{ contact_info.email }}" target="_blank">{{ contact_info.email }}</a></div>
+    <div class="terminal__result">Location: {{ contact_info.location }}</div>
+    <p class="terminal__result"></p>
+    <div class="terminal__result">Online Profiles:</div>
+    <div class="terminal__result">- GitHub: <a href="{{ contact_info.github }}" target="_blank">{{ contact_info.github }}</a></div>
+    <div class="terminal__result">- LinkedIn: <a href="{{ contact_info.linkedin }}" target="_blank">{{ contact_info.linkedin }}</a></div>
+    <div class="terminal__result">- Telegram: <a href="{{ contact_info.telegram_url }}" target="_blank">{{ contact_info.telegram_name }}</a></div>
+    <p class="terminal__result"></p>
+    <div class="terminal__result">P.S. Contact me via Telegram for the fastest answer</div>
+    <p class="terminal__result"></p>
+    <div class="terminal__result"># <span class="terminal_blink"></span></div>
+</div>
+{% endblock %}

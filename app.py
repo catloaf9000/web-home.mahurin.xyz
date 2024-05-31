@@ -2,8 +2,10 @@ from flask import Flask, render_template, send_from_directory, abort
 import os
 import markdown
 import re
+import json
 
 BLOGS_DIR = 'blogs'
+CONTACT_JSON = 'contact_info.json'
 
 app = Flask(__name__)
 
@@ -34,9 +36,16 @@ def get_blog_metadata(filepath):
     content = ''.join(content_lines).strip()
     return metadata, content
 
+def json_to_dict(file):
+    json_file = os.path.join(os.path.dirname(__file__), file)
+    # Read the JSON file
+    with open(json_file, 'r') as f:
+        return json.load(f)
+
 @app.route("/")
 def index():
-    return render_template('index.html')
+    contact_info = json_to_dict(CONTACT_JSON)
+    return render_template('index.html', contact_info=contact_info)
 
 @app.route("/blogs")
 def blogs():
@@ -64,6 +73,11 @@ def blog(slug):
 @app.route("/projects")
 def projects():
     return render_template('projects.html')
+
+@app.route("/contact")
+def contact():
+    contact_info = json_to_dict(CONTACT_JSON)
+    return render_template('contact.html', contact_info=contact_info)
 
 if __name__ == '__main__':
     # Allow connections from any IP address

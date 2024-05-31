@@ -102,15 +102,15 @@
                 <span class="man-page__heading" id="contact">CONTACTS</span>
                 <span class="man-page__text _bold-font">Email:</span>
                 <p class="man-page__text man-page__text_indent">
-                    <a href="mailto:catloaf9000@gmail.com">catloaf9000@gmail.com</a>
+                    <a href="mailto:{{ contact_info.email }}" target="_blank">{{ contact_info.email }}</a>
                 </p>
                 <span class="man-page__text _bold-font">LinkedIn:</span>
                 <p class="man-page__text man-page__text_indent">
-                    <a href="https://www.linkedin.com/in/oleksii-mahurin/">linkedin.com/in/oleksii-mahurin</a>
+                    <a href="{{ contact_info.linkedin }}" target="_blank">{{ contact_info.linkedin }}</a>
                 </p>
                 <span class="man-page__text _bold-font">Telegram:</span>
                 <p class="man-page__text man-page__text_indent">
-                    <a href="https://t.me/catloaf9000">@catloaf9000</a>
+                    <a href="{{ contact_info.telegram_url }}" target="_blank">{{ contact_info.telegram_name }}</a>
                 </p>
             </div>
         </div>
