@@ -1,3 +1,15 @@
+/* Define primary font and colors using CSS variables */
+:root {
+    --font-main: 'DejaVuSansMono', monospace;
+    --color-background: black;
+    --color-text: lightgray;
+    --color-text-muted: slategray;
+    --color-link: whitesmoke;
+    --color-accent: lightgray;
+    --color-hover-background: black;
+    --color-hover-text: lightgray;
+}
+
 @font-face {
     font-family: 'DejaVuSansMono';
     src: url('fonts/DejaVuSansMono.ttf') format('truetype');
@@ -26,9 +38,10 @@
     font-style: oblique;
 }
 
-/* Mobile-first base styles */
 body {
     background-color: black;
+    font-family: 'DejaVuSansMono', monospace;
+    font-size: 12px;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -39,11 +52,12 @@ a {
     color: whitesmoke;
 }
 
+img {
+    width: 100%;
+}
+
 .page {
-    background-color: black;
     border: 3px solid lightgray;
-    font-family: 'DejaVuSansMono', monospace;
-    font-size: 12px;
     color: lightgray;
     margin: 10px;
     flex: 1;
@@ -56,12 +70,7 @@ a {
     flex: 1;
 }
 
-img {
-    width: 100%;
-}
-
 .menu {
-    /* background-color: #f8f8f8; */
     background-color: lightgray;
     padding: 10px;
     margin-bottom: 20px;
@@ -73,10 +82,6 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-around;
-}
-
-.menu__item {
-    margin: 0 10px;
 }
 
 .menu__link {
@@ -94,17 +99,9 @@ img {
 }
 
 .footer {
-    background-color: lightgray;
-    color: #333;
     padding: 5px;
     margin-top: 20px;
     text-align: center;
-}
-
-.man-page {
-    font-family: 'DejaVuSansMono', monospace;
-    color: lightgray;
-    background-color: black;
 }
 
 .man-page__section {
@@ -114,14 +111,12 @@ img {
 .man-page__heading {
     font-weight: bold;
     font-size: 1.2em;
-    color: lightgray;
     display: block;
     margin-bottom: 5px;
 }
 
 .man-page__text {
     margin: 0;
-    color: lightgray;
     padding-left: 60px;
     padding-bottom: 18px;
 }
@@ -148,8 +143,8 @@ img {
     font-weight: bold;
 }
 
-#blogs-list {
-    font-family: 'DejaVuSansMono', monospace;
+.contacts * {
+    padding-bottom: 3px;
 }
 
 #blogs-list ul {
@@ -164,9 +159,6 @@ img {
 
 .blogs-entry__header {
     all: unset;
-    margin: 0;
-    padding: 0;
-    color:lightgray
 }
 
 .blogs-entry__description {
@@ -184,7 +176,6 @@ img {
 .blogs-entry:hover .blogs-entry__description {
     color: #333;
 }
-
 
 .terminal_blink {
     display: inline-block;
@@ -204,38 +195,11 @@ img {
     display: none;
 }
 
-.cursor {
-    display: inline-block;
-    width: 10px; /* Adjust the width as needed */
-    height: 1em; /* Height matches the font size */
-    background-color: white;
-    animation: blink 1s step-end infinite; /* Blinking effect */
-    vertical-align: bottom; /* Align with text */
-}
-@keyframes blink {
-    50% { background-color: transparent; }
-}
-
-
-
-
-
-/* Tablet and larger */
-@media (min-width: 600px) {
-
-}
-
 /* Desktop and larger */
 @media (min-width: 1024px) {
     body {
         padding: 0 20%;
-    }
-
-    .page {
-        border: 3px solid lightgray;
-        font-family: 'DejaVuSansMono', monospace;
         font-size: 14px;
-        color: lightgray;
     }
 
     .page__body {
